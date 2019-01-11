@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Kingsley Portfolio</title>
+    <link rel="stylesheet" href="/css/main.css">
+</head>
+
+<body>
+    <div class="wrapper">
+        <nav class="navBar">
+            <a href="#">
+                <img src="/img/logo.png" alt="logo">
+            </a>
+        </nav>
+
+        <header>
+            <h1 class="anim">Web Developer & Graphic Designer</h1>
+            <p class="anim">Hi, my name is <span>Kingsley Isaac Zuze</span>. This is my portfolio website If you are
+                interested in
+                working with me check my contact details <a href="#contact" class="scroll">here</a></p>
+        </header>
+
+        <div class="work">
+            <img class="anim" src="/img/work3.jpg" alt="project">
+            <img class="anim" src="/img/work2.png" alt="project">
+            <img class="anim" src="/img/work8.png" alt="project">
+            <img class="anim" src="/img/work4.jpg" alt="project">
+        </div>
+
+        <div class="header2">
+            <h1 class="anim">Other Designs</h1>
+            <p class="anim">Some of my photo manipulation projects</p>
+        </div>
+
+        <div class="work2">
+            <img class="anim" src="/img/work6.png" alt="projects">
+            <img class="anim" src="/img/work7.png" alt="projects">
+        </div>
+
+        <div class="header2">
+            <h1 class="anim">Web Projects</h1>
+            <p class="anim">Web projects will be uploaded soon as my portfolion grows</p>
+        </div>
+
+        <div class="header3">
+            <h1 class="anim">Skills</h1>
+            <p class="anim">Below are some of my skills, I am continuously adding to them.. </p>
+        </div>
+
+        <div class="skills">
+            <p class="anim">Graphics</p>
+            <img class="anim" src="/img/skills/ae.png" alt="">
+            <img class="anim" src="/img/skills/ps.png" alt="">
+            <img class="anim" src="/img/skills/ai.png" alt="">
+            <img class="anim" src="/img/skills/xd.png" alt="">
+        </div>
+
+
+        <div class="skills">
+            <p class="anim">Coding</p>
+            <img class="anim" src="/img/skills/html5-plain.png" alt="">
+            <img class="anim" src="/img/skills/css3-plain.png" alt="">
+            <img class="anim" src="/img/skills/javascript-plain.png" alt="">
+            <img class="anim" src="/img/skills/bootstrap-plain.png" alt="">
+            <img class="anim" src="/img/skills/php-plain.png">
+            <img class="anim" src="/img/skills/git-plain.png">
+            <img class="anim" src="/img/skills/c-plain.png">
+            <img class="anim" src="/img/skills/python-plain.png">
+            <img class="anim" src="/img/skills/wordpress-plain.png">
+        </div>
+
+        <div class="header4">
+            <h1>Contact</h1>
+            <p>Contact me on the following:</p>
+
+            <p id="contact">+263 776 969 325 <br> kingsleybingala@gmail.com</p>
+        </div>
+    </div>
+
+    <footer>
+        <p>Kingsley | Dev & Design &copy; 2019</p>
+    </footer>
+
+    <script src="/js/scrollreveal.min.js">
+    </script>
+
+    <script src="js/jquery-3.3.1.js"></script>
+
+    <script type="text/javascript">
+        window.sr = ScrollReveal();
+        sr.reveal('.anim');
+
+        $(document).ready(function () {
+
+            var scrollLink = $('.scroll');
+
+            scrollLink.click(function (e) {
+                e.preventDefault();
+                $('body, html').animate({
+                    scrollTop: $(this.hash).offset().top
+                }, 600)
+            })
+
+        });
+    </script>
+</body>
+
+</html>
